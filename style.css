@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #EF800E, #0c001b);
+    display: flex;
+    padding: 20px 0;
+}
+
+.open-menu {
+    width: 50px;
+    filter: brightness(100);
+    cursor: pointer;
+}
+
+.logo {
+    width: 150px;
+    margin: auto;
+}
+
+.menu {
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .7s ease-out;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+.menu div p {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo-menu {
+    width: 150px;
+    margin: auto;
+}
+
+.menu nav li {
+    color: white;
+    background-color: #EF800E;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    height: 50px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.menu nav li:hover {
+    color: #EF800E;
+    background-color: white;
+}
+
+footer {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+footer p {
+    font-size: .9em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 7px;
+}
+
+footer span {
+    color: #EF800E;
+}
